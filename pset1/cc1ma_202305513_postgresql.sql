@@ -3,7 +3,7 @@
 DROP DATABASE IF EXISTS uvv;
 DROP USER IF EXISTS luiz_lessa;
 
---
+--Deletar o schema caso exista um com o mesmo nome--
 
 DROP SCHEMA IF EXISTS lojas CASCADE;
 
@@ -23,7 +23,7 @@ lc_collate = 'pt_BR.UTF-8'
 lc_ctype = 'pt_BR.UTF-8'
 allow_connections = true;
 
---Usar o banco de dados la loja uvv--
+--Alternar o usuário--
 
 \c "host=localhost dbname=uvv user=luiz_lessa password=202305513";
 
